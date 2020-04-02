@@ -1,0 +1,21 @@
+<html>
+<h1> FACT ABOUT THE '{{ ansible_nodename }} ' is below </h1>
+<body>
+<br> The Ansible Facts will be below one of the type</br>
+    <br> Ansible unsafe text</br>
+    <br> Dicitonary</br>
+    <br> list</br>
+<br>" Data type of 'ansible_architecture'  is {{ ansible_architecture | type_debug }} "</br>
+<br>" Data type of 'ansible_date_time' is {{ ansible_date_time | type_debug }} "</br>
+<br>" Data type of 'ansible_all_ipv4_addresses' is {{ ansible_ip_addresses | type_debug }} " </br>
+
+<br> Simply printing the value of fact which is Ansible UnSafe Text type</br>
+<br> '{{ ansible_architecture }}'</br>
+<br> accessing date_Dictionary element </br>
+<br> '{{ ansible_date_time.date }}' </br>
+<br>  accessing list and getting the ip </br>
+<br> '{{ ansible_ip_addresses[1]}}'</br>
+</body>
+</html>
+
+

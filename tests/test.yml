@@ -1,4 +1,5 @@
 ---
 - hosts: windows
+  gather_facts: true
   roles:
     - iis

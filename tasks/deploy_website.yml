@@ -3,3 +3,7 @@
    win_copy:
      src: '../files/index.html'
      dest: 'C:\inetpub\wwwroot\ansible.html'
+ - name: dynamic website
+   template:
+     src: facts.j2
+     dest: C:\inetpub\wwwroot\facts.html
