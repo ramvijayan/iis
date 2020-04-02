@@ -1,0 +1,5 @@
+---
+ - name: copy the website
+   win_copy:
+     src: '../files/index.html'
+     dest: 'C:\inetpub\wwwroot\ansible.html'

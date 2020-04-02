@@ -1,0 +1,9 @@
+[windows]
+node1.chennaidryice.com
+
+[windows:vars]
+ansible_user=usernode
+ansible_password=Azurevm#1234
+ansible_connection=winrm
+ansible_winrm_server_cert_validation=ignore
+

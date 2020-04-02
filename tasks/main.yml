@@ -1,0 +1,12 @@
+---
+ - name: usercreation and providing remote access
+   include_tasks: user.yml
+ - name: Install IIS
+   win_feature:
+     name: '{{ features_to_install }}'
+     state: '{{ feature_state }}'
+     restart: '{{ restart_required }}'
+     include_sub_features: '{{ sub_features_required }}'
+     include_management_tools: '{{ mangement_tool_required }}'
+ - name: deploy website
+   include_tasks: deploy_website.yml

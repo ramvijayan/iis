@@ -1,0 +1,17 @@
+---
+ - name: adding the user into active directory
+   win_domain_user:
+     name: iis_admin
+     firstname: iis
+     surname: admin
+     password: Azurevm#1234
+     state: present
+     domain_username: chennaidryice\usernode
+     domain_password: Azurevm#1234
+     domain_server: node1@chennaidryice.com
+ - name: Add a local and domain user to a local group
+   win_group_membership:
+     name: Remote Desktop Users
+     members:
+       - chennaidryice\iis_admin
+     state: present

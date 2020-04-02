@@ -1,0 +1,10 @@
+---
+# defaults file for iisfeatures_to_install
+features_to_install: "Web-Server"
+feature_state: present
+restart_required: yes
+sub_features_required: yes	
+mangement_tool_required: yes
+user_name: iiis_user
+passwd: Test@1234
+groupname: Users
